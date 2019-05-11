@@ -1,0 +1,31 @@
+{
+  "name": "network-socket",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "start:wd": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "chance": "^1.0.18",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv": "^6.2.0",
+    "express": "~4.16.0",
+    "html2canvas": "^1.0.0-rc.1",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "pug": "^2.0.3",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "node-windows": "^0.1.14",
+    "nodemon": "^1.18.9"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "public/",
+      "views/"
+    ]
+  }
+}

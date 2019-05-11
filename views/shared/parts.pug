@@ -1,0 +1,63 @@
+mixin navigation()
+    nav.navbar
+        .container-fluid
+            .navbar-header
+                a.navbar-toggle.collapsed(href='javascript:void(0);', data-toggle='collapse', data-target='#navbar-collapse', aria-expanded='false')
+                a.bars(href='javascript:void(0);')
+                a.navbar-brand(href='index.html') پنل ادمین
+            #navbar-collapse.collapse.navbar-collapse
+                ul.nav.navbar-nav
+                    // Call Search
+                    li
+                        a.js-search(href='javascript:void(0);', data-close='true')
+                            i.material-icons search
+                    // #END# Call Search
+                    // Notifications
+                    //- li.dropdown
+                    //-     a#removeAll.dropdown-toggle(href='javascript:void(0);')
+                    //-         i.material-icons delete
+                    // #END# Notifications
+
+
+mixin sideBar()
+    section
+        // Main Sidebar
+        aside#mainsidebar.sidebar
+            // User Info
+            .user-info
+                .image
+                    img(src='images/user.png', width='48', height='48', alt='User')
+                .info-container
+                    .name(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') امین تقی خانی
+                    .email amin76taghikhani@gmail.com
+                    .btn-group.user-helper-dropdown
+                        i.material-icons(data-toggle='dropdown', aria-haspopup='true', aria-expanded='true') keyboard_arrow_down
+                        ul.dropdown-menu
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons person
+                                    | پروفایل
+                            li.divider(role='seperator')
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons input
+                                    | خروج
+            // #User Info
+            // Menu
+            .menu
+                ul.list
+                    li.active
+                        a(href='/')
+                            i.material-icons home
+                            span خانه
+            // #Menu
+            // Footer
+            .legal
+                .copyright
+                    | © 2017
+                    a(href='http://mynameisamin.ir') Amin Taghikhani
+                .version
+                    b Version:
+                    |  1.0.0
+            // #Footer
+            // #END# Left Sidebar
